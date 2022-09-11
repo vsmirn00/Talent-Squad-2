@@ -6,7 +6,7 @@ The following project was created with the aim to predict and classify images re
 
 The provided dataset came in a main folder which contained the train and test folders. The train folder contained a folder for each class, whereas the test folder contained the images from all the classes mingled altogether. The main strategy to train the model was to treat those folders as subdirectories. However, the test folder was treated as a default directory since it had no separation of classes. Notwithstanding, To solve this, with the help of the "os" library new folders were created to reorganize the structure of the data so Data Augmentation became possible. Thus, we divided the training dataset into train and validation datasets with validation dataset accounting for the 20% of the initial data. In addition to that, the dimensions of the pictures were carefully metered and ploted to see if they were of the same size. In doing so, it was evident that we could face a mismatch in the range of those dimensions. To tackle down this problem, a rescaling technique was applied which consisted in normalizing those measures by dividing by 255. It was done this way because we are mainly dealing with colourful images.
 
-## Important note regarding the use of this notebook:
+## Important note regarding the use of this notebook
 
 The folders in the repository are exactly in their original format and order. That being said, the code is made to be run in Google Colab, if executing the cells one by one, the code will automatically create and reallocate the files for flow_from_directory() to work. Therefore, there are cells in this notebook that will work only one time and it is crucial to execute each cell in its respective order. 
 
